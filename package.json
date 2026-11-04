@@ -1,0 +1,54 @@
+{
+  "name": "dsh-offwork-countdown",
+  "version": "0.1.0",
+  "description": "下班倒计时：输入框下方常驻一枚倒计时胶囊，显示距离下班还剩多久，可设置上下班时间，到点后转为加班计时。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "countdown",
+    "off-work",
+    "widget"
+  ],
+  "author": "ZydFirst",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZydFirst/dsh-offwork-countdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZydFirst/dsh-offwork-countdown/issues"
+  },
+  "homepage": "https://github.com/ZydFirst/dsh-offwork-countdown#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-256.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Off-work Countdown",
+    "description": "A countdown pill under the message composer that shows how long is left before you clock off; click it to set your work hours, and it turns into an overtime timer after the end time."
+  }
+}
