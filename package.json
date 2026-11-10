@@ -1,6 +1,6 @@
 {
   "name": "dsh-offwork-countdown",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "下班倒计时：输入框下方常驻一枚倒计时胶囊，显示距离下班还剩多久，可设置上下班时间，到点后转为加班计时。",
   "keywords": [
     "dsh",
